@@ -4,8 +4,8 @@ slct1.options[slct1.selectedIndex].id;
 var slct2 = document.querySelector('#slct2');
 slct2.options[slct2.selectedIndex].id;
 
-    let imgEle1 = "./img/" + slct1.value +'.png';
-    let imgEle2 = "./img/" + slct2.value +'.png';
+    let imgEle1 = "./img/" + slct1.value +'.GIF';
+    let imgEle2 = "./img/" + slct2.value +'.GIF';
     let imgEle3 = "./img/" + slct3.value +'.png';
     let imgEle4 = document.querySelectorAll(".image")[3];
     let imgEle5 = document.querySelectorAll(".image")[4];
@@ -74,7 +74,7 @@ function populate (s1,s2) {
 function createFilePathbg() {
   var select = document.getElementById("slct1");
   var selectedValue = select.options[select.selectedIndex].value;
-  var filePathbg = "img/Background/" + selectedValue + ".png";
+  var filePathbg = "img/Background/" + selectedValue + ".GIF";
   return filePathbg;
 }
 // update image src for background
@@ -89,7 +89,7 @@ select.addEventListener("change", function() {
 function createFilePathskin() {
   var select2 = document.getElementById("slct2");
   var selectedValue2 = select2.options[select2.selectedIndex].value;
-  var filePathskin = "img/Body/" + selectedValue2 + ".png";
+  var filePathskin = "img/Body/" + selectedValue2 + ".GIF";
   return filePathskin;
 }
 // update image src for skin
