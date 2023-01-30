@@ -89,7 +89,7 @@ select.addEventListener("change", function() {
 function createFilePathskin() {
   var select2 = document.getElementById("slct2");
   var selectedValue2 = select2.options[select2.selectedIndex].value;
-  var filePathskin = "img/Body/" + selectedValue2 + ".GIF";
+  var filePathskin = "img/Body/" + selectedValue2 + ".png";
   return filePathskin;
 }
 // update image src for skin
@@ -104,7 +104,7 @@ select2.addEventListener("change", function() {
 function createFilePatheyes() {
   var select3 = document.getElementById("slct3");
   var selectedValue3 = select3.options[select3.selectedIndex].value;
-  var filePatheyes = "img/Eyes/" + selectedValue3 + ".png";
+  var filePatheyes = "img/Eyes/" + selectedValue3 + ".GIF";
   return filePatheyes;
 }
 // update image src for eyes
