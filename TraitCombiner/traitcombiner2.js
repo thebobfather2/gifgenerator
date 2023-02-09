@@ -89,7 +89,7 @@ select.addEventListener("change", function() {
 function createFilePathskin() {
   var select2 = document.getElementById("slct2");
   var selectedValue2 = select2.options[select2.selectedIndex].value;
-  var filePathskin = "img/Body/" + selectedValue2 + ".png";
+  var filePathskin = "img/Body/" + selectedValue2 + ".gif";
   return filePathskin;
 }
 // update image src for skin
@@ -104,7 +104,7 @@ select2.addEventListener("change", function() {
 function createFilePatheyes() {
   var select3 = document.getElementById("slct3");
   var selectedValue3 = select3.options[select3.selectedIndex].value;
-  var filePatheyes = "img/Eyes/" + selectedValue3 + ".GIF";
+  var filePatheyes = "img/Eyes/" + selectedValue3 + ".gif";
   return filePatheyes;
 }
 // update image src for eyes
@@ -134,7 +134,7 @@ select4.addEventListener("change", function() {
 function createFilePathheadwear() {
   var select6 = document.getElementById("slct6");
   var selectedValue6 = select6.options[select6.selectedIndex].value;
-  var filePathheadwear = "img/Headwear/" + selectedValue6 + ".png";
+  var filePathheadwear = "img/Headwear/" + selectedValue6 + ".gif";
   return filePathheadwear;
 }
 // update image src for headwear
@@ -164,7 +164,7 @@ select5.addEventListener("change", function() {
 function createFilePathshirt() {
   var select7 = document.getElementById("slct7");
   var selectedValue7 = select7.options[select7.selectedIndex].value;
-  var filePathshirt = "img/Shirt/" + selectedValue7 + ".png";
+  var filePathshirt = "img/Shirt/" + selectedValue7 + ".gif";
   return filePathshirt;
 }
 // update image src for shirt
