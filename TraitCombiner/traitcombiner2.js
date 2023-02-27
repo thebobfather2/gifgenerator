@@ -74,7 +74,7 @@ function populate (s1,s2) {
 function createFilePathbg() {
   var select = document.getElementById("slct1");
   var selectedValue = select.options[select.selectedIndex].value;
-  var filePathbg = "img/Background/" + selectedValue + ".GIF";
+  var filePathbg = "img/Background/" + selectedValue + ".gif";
   return filePathbg;
 }
 // update image src for background
@@ -119,7 +119,7 @@ select3.addEventListener("change", function() {
 function createFilePathmouth() {
   var select4 = document.getElementById("slct4");
   var selectedValue4 = select4.options[select4.selectedIndex].value;
-  var filePathmouth = "img/Mouth/" + selectedValue4 + ".png";
+  var filePathmouth = "img/Mouth/" + selectedValue4 + ".gif";
   return filePathmouth;
 }
 // update image src for mouth
@@ -128,21 +128,6 @@ select4.addEventListener("change", function() {
     var filePathmouth = createFilePathmouth();
     var imgEle4 = document.getElementById("myImagemouth");
     imgEle4.src = filePathmouth
-});
-
-// create filepath for headwear
-function createFilePathheadwear() {
-  var select6 = document.getElementById("slct6");
-  var selectedValue6 = select6.options[select6.selectedIndex].value;
-  var filePathheadwear = "img/Headwear/" + selectedValue6 + ".gif";
-  return filePathheadwear;
-}
-// update image src for headwear
-var select6 = document.getElementById("slct6");
-select6.addEventListener("change", function() {
-    var filePathheadwear = createFilePathheadwear();
-    var imgEle6 = document.getElementById("myImageheadwear");
-    imgEle6.src = filePathheadwear
 });
 
 // create filepath for eyewear
@@ -160,11 +145,26 @@ select5.addEventListener("change", function() {
     imgEle5.src = filePatheyewear
 });
 
+// create filepath for headwear
+function createFilePathheadwear() {
+  var select6 = document.getElementById("slct6");
+  var selectedValue6 = select6.options[select6.selectedIndex].value;
+  var filePathheadwear = "img/Headwear/" + selectedValue6 + ".gif";
+  return filePathheadwear;
+}
+// update image src for headwear
+var select6 = document.getElementById("slct6");
+select6.addEventListener("change", function() {
+    var filePathheadwear = createFilePathheadwear();
+    var imgEle6 = document.getElementById("myImageheadwear");
+    imgEle6.src = filePathheadwear
+});
+
 // create filepath for shirt
 function createFilePathshirt() {
   var select7 = document.getElementById("slct7");
   var selectedValue7 = select7.options[select7.selectedIndex].value;
-  var filePathshirt = "img/Shirt/" + selectedValue7 + ".gif";
+  var filePathshirt = "img/Clothes/" + selectedValue7 + ".gif";
   return filePathshirt;
 }
 // update image src for shirt
