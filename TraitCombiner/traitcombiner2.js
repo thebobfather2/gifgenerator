@@ -130,6 +130,21 @@ select4.addEventListener("change", function() {
     imgEle4.src = filePathmouth
 });
 
+// create filepath for headwear
+function createFilePathheadwear() {
+  var select6 = document.getElementById("slct6");
+  var selectedValue6 = select6.options[select6.selectedIndex].value;
+  var filePathheadwear = "img/Headwear/" + selectedValue6 + ".gif";
+  return filePathheadwear;
+}
+// update image src for headwear
+var select6 = document.getElementById("slct6");
+select6.addEventListener("change", function() {
+    var filePathheadwear = createFilePathheadwear();
+    var imgEle6 = document.getElementById("myImageheadwear");
+    imgEle6.src = filePathheadwear
+});
+
 // create filepath for eyewear
 function createFilePatheyewear() {
   var select5 = document.getElementById("slct5");
