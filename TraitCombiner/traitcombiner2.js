@@ -119,7 +119,7 @@ select3.addEventListener("change", function() {
 function createFilePathmouth() {
   var select4 = document.getElementById("slct4");
   var selectedValue4 = select4.options[select4.selectedIndex].value;
-  var filePathmouth = "img/MOUTH/" + selectedValue4 + ".gif";
+  var filePathmouth = "img/Mouth/" + selectedValue4 + ".png";
   return filePathmouth;
 }
 // update image src for mouth
@@ -143,21 +143,6 @@ select5.addEventListener("change", function() {
     var filePatheyewear = createFilePatheyewear();
     var imgEle5 = document.getElementById("myImageeyewear");
     imgEle5.src = filePatheyewear
-});
-
-// create filepath for headwear
-function createFilePathheadwear() {
-  var select6 = document.getElementById("slct6");
-  var selectedValue6 = select6.options[select6.selectedIndex].value;
-  var filePathheadwear = "img/Headwear/" + selectedValue6 + ".gif";
-  return filePathheadwear;
-}
-// update image src for headwear
-var select6 = document.getElementById("slct6");
-select6.addEventListener("change", function() {
-    var filePathheadwear = createFilePathheadwear();
-    var imgEle6 = document.getElementById("myImageheadwear");
-    imgEle6.src = filePathheadwear
 });
 
 // create filepath for shirt
