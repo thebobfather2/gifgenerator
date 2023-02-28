@@ -6,9 +6,9 @@ slct2.options[slct2.selectedIndex].id;
 
     let imgEle1 = "./img/" + slct1.value +'.GIF';
     let imgEle2 = "./img/" + slct2.value +'.GIF';
-    let imgEle3 = "./img/" + slct3.value +'.gif';
-    let imgEle4 = "./img/" + slct4.value +'.GIF';
-    let imgEle5 = "./img/" + slct5.value +'.gif';
+    let imgEle3 = "./img/" + slct3.value +'.png';
+    let imgEle4 = document.querySelectorAll(".image")[3];
+    let imgEle5 = document.querySelectorAll(".image")[4];
     let imgEle6 = "./img/" + slct6.value +'.png';
     let imgEle7 = "./img/" + slct7.value +'.png';
     let resEle = document.querySelector(".result");
