@@ -164,7 +164,7 @@ select5.addEventListener("change", function() {
 function createFilePathshirt() {
   var select7 = document.getElementById("slct7");
   var selectedValue7 = select7.options[select7.selectedIndex].value;
-  var filePathshirt = "img/Clothes/" + selectedValue7 + ".gif";
+  var filePathshirt = "img/CLOTHES/" + selectedValue7 + ".gif";
   return filePathshirt;
 }
 // update image src for shirt
