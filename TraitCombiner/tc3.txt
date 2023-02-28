@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<div lang="en">
+<head>
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7DZXC5ZN68"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7DZXC5ZN68');
+</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Secret Project</title>
+<meta name="description" content="Plan how you will build your Edd Fox NFT using traits purchased in FoxMart on Web3!">
+<style>
+   body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+   }
+</style>
+
+<!-- fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="./TraitCombiner/traitcombiner.css">
+</head>
+
+<body class="body">
+<div class="main">
+<h1 class="title">Secret GIF Generator</h1>
+</div>
+<div class="widget">
+ <h2>Select Your Traits</h2>
+ <div class="traitSelector">
+Body:
+<select id="slct2" name="slct2">
+  <option value=""></option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+</select>
+<br />
+Head:
+<select id="slct6" name="slct6">
+  <option value=""></option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+</select>
+<br />
+Eyes:
+<select id="slct3" name="slct3">
+  <option value=""></option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+</select>
+<br />
+Shirt:
+<select id="slct7" name="slct7">
+  <option value=""></option>
+  <option value="None">None</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+</select>
+<br />
+
+</select>
+</div>
+</div>
+
+<!-- Create an image element for bg in your HTML code -->
+<img class="preview" id="myImageskin">
+<img class="preview" id="myImageheadwear">
+<img class="preview" id="myImageeyes">
+<img class="preview" id="myImageshirt">
+
+
+<!-- <button onclick="getBackground()"> Check Background </button>
+<button onclick="getSkin()"> Check Skin </button>
+
+<button onclick = "show()" id = "btn">  
+   Show Layers  
+</button>  
+
+<button onclick = "hide()" id = "btn">  
+   Hide Layers  
+</button> -->
+
+
+<!-- testing getting image from dropdown: -->
+<!-- <select id="image-category">
+ <option>...</option>
+</select> -->
+<!-- need to find way to pass dropdown selections into these spaces -->
+<div id="div" style="display:none">
+   <!-- background -->
+   <img class="image" src="./img/Background/Beach.png"/>
+   <!-- skin -->
+   <img class="image" src="./img/RegularFox.png"/>
+   <!-- mouth -->
+   <img class="image" src="./img/HappyMouth.png"/>
+   <!-- eyes -->
+   <img class="image" src="./img/Eyes/Frog.png"/>
+   <!-- shirt -->
+   <img class="image" src="./img/WhiteShirt.png"/>
+</div>
+<canvas class="result"></canvas>
+<br />
+<button id="generate"></button>
+</body>
+
+<!-- <h3>Click on the button above to generate your new Fox</h3> -->
+
+<script>  
+   function show() {  
+   document.getElementById("div").style.display = "block";   
+   }  
+</script>
+
+<script>  
+   function hide() {  
+   document.getElementById("div").style.display = "none";   
+   }  
+</script> 
+
+<script src="./TraitCombiner/traitcombiner2.js"></script>
+
+<!-- <script>
+   let imgEle1 = document.querySelectorAll(".image")[0];
+   let imgEle2 = document.querySelectorAll(".image")[1];
+   let imgEle3 = document.querySelectorAll(".image")[2];
+   let imgEle4 = document.querySelectorAll(".image")[3];
+   let resEle = document.querySelector(".result");
+   var context = resEle.getContext("2d");
+   let BtnEle = document.querySelector(".Btn");
+   BtnEle.addEventListener("click", () => {
+   resEle.width = imgEle1.width;
+      resEle.height = imgEle1.height;
+      context.globalAlpha = 1.0;
+      context.drawImage(imgEle1, 0, 0);
+      context.globalAlpha = 1;
+      context.drawImage(imgEle2, 0, 0);
+      context.globalAlpha = 1;
+      context.drawImage(imgEle3, 0, 0);
+      context.globalAlpha = 1;
+      context.drawImage(imgEle4, 0, 0);
+   });
+</script> -->
+</body>
+</html>
