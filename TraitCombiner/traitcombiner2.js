@@ -119,7 +119,7 @@ select3.addEventListener("change", function() {
 function createFilePathmouth() {
   var select4 = document.getElementById("slct4");
   var selectedValue4 = select4.options[select4.selectedIndex].value;
-  var filePathmouth = "img/Mouth/" + selectedValue4 + ".png";
+  var filePathmouth = "img/MOUTH/" + selectedValue4 + ".gif";
   return filePathmouth;
 }
 // update image src for mouth
