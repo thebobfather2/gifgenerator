@@ -44,6 +44,7 @@
  <div class="traitSelector">
 Background:
 <select id="slct1" name="slct1">
+<<<<<<< HEAD
    <option value="">None</option>
    <option value="1">1</option>
    <option value="2">2</option>
@@ -55,10 +56,25 @@ Background:
    <option value="8">8</option>
    <option value="9">9</option>
    <option value="10">10</option>
+=======
+  <option value=""></option>
+  <option value="Beach">Beach</option>
+  <option value="BlankCanvas">Blank Canvas</option>
+  <option value="BlueBlend">Blue Blend</option>
+  <option value="Bronze">Bronze</option>
+  <option value="DesertSand">Desert Sand</option>
+  <option value="GlassTeal">Glass Teal</option>
+  <option value="LakeBlue">Lake Blue</option>
+  <option value="Pietrobain">Pietrobain</option>
+  <option value="Pink">Pink</option>
+  <option value="SkyBlue">Sky Blue</option>
+  <option value="StreetArtBobby">Street Art Bobby</option>
+>>>>>>> db85c26 (init)
 </select>
 <br />
 Body:
 <select id="slct2" name="slct2">
+<<<<<<< HEAD
   <option value="">None</option>
   <option value="1">1</option>
   <option value="2">2</option>
@@ -71,10 +87,15 @@ Body:
   <option value="9">9</option>
   <option value="10">10</option>
   <option value="10">11</option>
+=======
+  <option value=""></option>
+  <option value="Wag">Wag</option>
+>>>>>>> db85c26 (init)
 </select>
 <br />
 Eyes:
 <select id="slct3" name="slct3">
+<<<<<<< HEAD
    <option value="">None</option>
    <option value="1">1</option>
    <option value="2">2</option>
@@ -93,10 +114,16 @@ Eyes:
    <option value="15">15</option>
    <option value="16">16</option>
    <option value="17">17</option>
+=======
+  <option value=""></option>
+  <option value="Peep">Peep</option>
+  <option value="Loopy">Loopy</option>
+>>>>>>> db85c26 (init)
 </select>
 <br />
 Mouth:
 <select id="slct4" name="slct4">
+<<<<<<< HEAD
   <option value="">None</option>
   <option value="1">1</option>
   <option value="2">2</option>
@@ -109,10 +136,18 @@ Mouth:
   <option value="9">9</option>
   <option value="10">10</option>
   <option value="11">11</option>
+=======
+  <option value=""></option>
+  <option value="Chattering">Chattering</option>
+  <option value="craving">Craving</option>
+  <option value="Grillz">Grillz</option>
+  <option value="Panting">Panting</option>
+>>>>>>> db85c26 (init)
 </select>
 <br />
 Headwear:
 <select id="slct6" name="slct6">
+<<<<<<< HEAD
    <option value="">None</option>
    <option value="1">1</option>
    <option value="2">2</option>
@@ -148,6 +183,10 @@ Headwear:
    <option value="32">32</option>
    <option value="33">33</option>
    <option value="34">34</option>
+=======
+  <option value=""></option>
+  <option value="Degen">Degen</option>
+>>>>>>> db85c26 (init)
 </select>
 <br />
 TBD:
@@ -198,14 +237,16 @@ TBD:
 </div>
 
 <!-- Create an image element for bg in your HTML code -->
-<img class="preview" id="myImagebg">
-<img class="preview" id="myImageskin">
-<img class="preview" id="myImageeyes">
-<img class="preview" id="myImagemouth">
-<img class="preview" id="myImageshirt">
-<img class="preview" id="myImageheadwear">
-<img class="preview" id="myImageeyewear">
-<img class="preview" id="myImageaccessory">
+<div id="Canvas">
+   <img class="preview" id="myImagebg">
+   <img class="preview" id="myImageskin">
+   <img class="preview" id="myImageeyes">
+   <img class="preview" id="myImagemouth">
+   <img class="preview" id="myImageshirt">
+   <img class="preview" id="myImageheadwear">
+   <img class="preview" id="myImageeyewear">
+   <img class="preview" id="myImageaccessory">
+</div>
 
 
 <!-- <button onclick="getBackground()"> Check Background </button>
@@ -248,8 +289,10 @@ TBD:
 </script> 
 
 <script src="./TraitCombiner/traitcombiner2.js"></script>
+<script src="./TraitCombiner/screenshot.js"></script>
 
-<!-- <script>
+<script>
+   document.getElementById(Canvas);
    let imgEle1 = document.querySelectorAll(".image")[0];
    let imgEle2 = document.querySelectorAll(".image")[1];
    let imgEle3 = document.querySelectorAll(".image")[2];
